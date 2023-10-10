@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>My Calculator</title>
+</head>
+<body>
+  <div class="flex flex-col items-center justify-center min-h-screen">
+    <div class=" border border-red-600 p-4 rounded-md shadow-lg">
+      <div class="mb-2">
+        <input id = "inputBox" type="text" class="w-full p-2 border border-cyan-700 rounded-md" id="display" disabled>
+      </div>
+      <div class="grid grid-cols-4 gap-2">
+        <button onclick = "clearCalc()" class=" p-2 bg-gray-200 rounded-md" >C</button>
+        <button onclick = "addDisplay(' ')"class=" p-2 bg-gray-200 rounded-md" >←</button>
+        <button onclick = "addDisplay('/')"class=" p-2 bg-gray-200 rounded-md" >/</button>
+        <button onclick = "addDisplay('*')"class=" p-2 bg-gray-200 rounded-md" >*</button>
+        <button onclick = "addDisplay('7')"class=" p-2 bg-gray-500 rounded-md" >7</button>
+        <button onclick = "addDisplay('8')"class=" p-2 bg-gray-500 rounded-md" >8</button>
+        <button onclick = "addDisplay('9')"class=" p-2 bg-gray-500 rounded-md" >9</butrton>
+        <button onclick = "addDisplay('-')"class=" p-2 bg-gray-200 rounded-md" >-</button>
+        <button onclick = "addDisplay('4')"class=" p-2 bg-gray-500 rounded-md" >4</button>
+        <button onclick = "addDisplay('5')"class=" p-2 bg-gray-500 rounded-md" >5</button>
+        <button onclick = "addDisplay('6')"class=" p-2 bg-gray-500 rounded-md" >6</button>
+        <button onclick = "addDisplay('+')"class=" p-2 bg-gray-200 rounded-md" >+</button>
+        <button onclick = "addDisplay('1')"class=" p-2 bg-gray-500 rounded-md" >1</button>
+        <button onclick = "addDisplay('2')"class=" p-2 bg-gray-500 rounded-md" >2</button>
+        <button onclick = "addDisplay('3')"class=" p-2 bg-gray-500 rounded-md" >3</button>
+        <button onclick = "calc()"class=" p-2 bg-gray-200 rounded-md" >=</button>
+        <button onclick = "addDisplay('0')" class=" col-span-3 p-2 bg-gray-500 rounded-md" >0</button>
+        <button onclick = "addDisplay('%')" class= " p-2 bg-gray-200 rounded-md" >%</button>
+      </div>
+    </div>
+  </div>
+  <script src = "script.js"></script>
+</body>
+</html>

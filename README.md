@@ -1,2 +1,4 @@
-# Calculator_Java
-Calculator App using swing GUI in java 
+#Calculator using HTML, CSS and JavaScript 
+
+Hello! 
+Enjoy!
